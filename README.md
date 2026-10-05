@@ -1,5 +1,7 @@
 # attendance-checker
 
+> **Moved.** This checker now lives in Seeds as [`presence/`](https://github.com/Birdbrain-wtf/seeds/tree/main/presence), where attendance roots are the evidence membership is admitted against, rather than a condition on a treasury payment. This repository is kept read-only so existing links and the CS33 record still resolve. New sessions are published there.
+
 The checker for a Kusama treasury bounty that releases money only for people who were witnessed attending a live session.
 
 A Kusama bounty needs a curator, and the curator decides when money is released. This repository is what the curator's decision is bound to. It turns a session's attendance into a Merkle root, the root is committed on Kusama Asset Hub before any award is made against it, and an award is valid only if the checker here passes against that root. Anyone can rerun it. Nobody has to trust the curator's account of who was there.
